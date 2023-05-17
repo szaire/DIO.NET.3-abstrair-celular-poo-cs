@@ -10,5 +10,16 @@ namespace DesafioPOO.Models
 		{
             Console.WriteLine($"Instalando o aplicativo \"{nomeApp}\" no Nokia");
 		}
+
+        public override string ToString()
+        {
+            return (
+				"Nokia specs:\n" +
+				$"Numero: {Numero}\n" +
+				$"Modelo: {Modelo}\n" +
+				$"IMEI: {Imei}\n" +
+				$"Memoria: {Memoria} Gb\n"
+				);
+        }
 	}
 }

@@ -10,5 +10,16 @@ namespace DesafioPOO.Models
 		{
 			Console.WriteLine($"Instalando o aplicativo \"{nomeApp}\" no iPhone");
 		}
+
+		public override string ToString()
+		{
+			return (
+				"iPhone specs:\n" +
+				$"Numero: {Numero}\n" +
+				$"Modelo: {Modelo}\n" +
+				$"IMEI: {Imei}\n" +
+				$"Memoria: {Memoria} Gb\n"
+				);
+		}
 	}
 }
